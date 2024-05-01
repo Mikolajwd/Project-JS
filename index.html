@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style-global.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="top">CrossoverCar.com</div>
+		<div class="selectedCar">
+			<!-- <button class="checkoutButton"></button> -->
+			<img class="selectedCarImg" sytle="" src="" alt="Selected Car" />
+			<div class="selectedCarDetails"></div>
+		</div>
+		<div class="saleSection"></div>
+		<div class="price"></div>
+		<div class="totalPrice"></div>
+		
+		<!-- section -->
+		<div class="checkoutSection" style="display: none">
+			<section class="orderSelectedCar" style="display: none">
+				<!-- Здесь содержимое формы оформления заказа -->
+				<form class="orderForm">
+					<div>
+						<label for="name">Full Name:</label>
+						<input type="text" name="name" required />
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" name="email" required />
+					</div>
+					<div>
+						<label for="deliveryDate">Delivery Date:</label>
+						<input type="date" name="deliveryDate" id="deliveryDate" required />
+					</div>
+					<div>
+						<label for="paymentMethod">Payment Method:</label>
+						<select name="paymentMethod" required>
+							<option value="" disabled selected>Select Payment Method</option>
+							<option value="credit">Credit</option>
+							<option value="leasing">Leasing</option>
+							<option value="cash">Cash</option>
+							<option value="tradeIn">Trade-In</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+				</form>
+			</section>
+		</div>
+
+		<div class="successSection">
+			<h2>Order Placed Successfully!</h2>
+			<p>Thank you for your purchase.</p>
+		</div>
+		<script src="./script2.js"></script>
+	</body>
+</html>
