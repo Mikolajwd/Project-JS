@@ -57,8 +57,8 @@ body {
     left: 6px;
     top: 6px;
 }
-
 .cardCarImg:hover {
+    z-index: 10;
     position: relative;
     left: 25%;
     transform: translate(-50%);
@@ -74,25 +74,25 @@ body {
 .detailCar .typeModel {
     top: 10px;
     left: 350px;
-    line-height: 8px;
+    line-height: 14px;
 }
 
 .detailCar .year {
     top: 10px;
     left: 350px;
-    line-height: 8px;
+    line-height: 14px;
 }
 
 .detailCar .power {
     top: 10px;
     left: 350px;
-    line-height: 8px;
+    line-height: 14px;
 }
 
 .detailCar .mileage {
     top: 10px;
     left: 350px;
-    line-height: 8px;
+    line-height: 14px;
 }
 
 .detailCar .price {
@@ -134,7 +134,7 @@ body {
     width: 900px;
     display: none;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px auto;
@@ -222,7 +222,7 @@ body {
 .checkoutSection {
     display: none;
     background-color: #f9f9f9;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 20px auto;
@@ -289,12 +289,9 @@ body {
 
 .summaryCarImg {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .summaryCarDetails {
     margin-top: 20px;
 }
-```
-
-Этот CSS добавит стилизацию для секции оформления заказа и всех элементов внутри неё. Теперь интерфейс будет более привлекательным и удобным для пользователей.
