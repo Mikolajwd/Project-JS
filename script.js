@@ -111,3 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
+
+
+
+// Wniesienie korekt w główny plik sk
