@@ -115,3 +115,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Wniesienie korekt w główny plik sk
+// dodatkowe sprawdzenie czy działąmy z gitem
