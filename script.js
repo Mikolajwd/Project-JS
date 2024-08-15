@@ -96,8 +96,6 @@ document.addEventListener("DOMContentLoaded", function() {
         successSection.style.display = "block";
     });
 
-});
-
 
 
 // Wniesienie korekt w główny plik sk
