@@ -79,20 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     goBackButton.addEventListener("click", function(event) {
         // Показать карточки автомобилей и скрыть форму заказа
         cardCars.forEach(function(card) {
