@@ -173,11 +173,14 @@ function showCarDetails(car) {
 	selectedCar.style.display = 'block';
 	console.log(selectedCar);
 
+const checkoutSection = document.querySelector('.checkoutSection')
+
+
 	// обработчик событий для кнопки вперед
 	const goNextButton = document.querySelector('.goNextButton');
 	goNextButton.addEventListener('click', function () {
 		console.log('click go next');
-		orderSelectedCar.style.display = 'block';
+		checkoutSection.style.display = 'block';
 		selectedCar.style.display = 'none';
 	});
 
@@ -191,6 +194,10 @@ function showCarDetails(car) {
 	});
 }
 
+
+
+
+
 // Добавим обработчики событий для карточек автомобилей
 const cardCars = document.querySelectorAll('.cardCar');
 cardCars.forEach((card, index) => {
@@ -200,3 +207,5 @@ cardCars.forEach((card, index) => {
 		showCarDetails(carsData[index]);
 	});
 });
+
+

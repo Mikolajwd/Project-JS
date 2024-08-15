@@ -1,19 +1,24 @@
-* {
+*{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 
+
 body {
 	font-family: nunito, open-sans, Arial, Helvetica, sans-serif;
 	background-color: #f0f0f0;
 	font-size: 1em;
-	background-image: url('./img-cars/bcg-main.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
+	/* background-size: cover; */
+	background-image: url('./img-cars/bcg-main.jpeg');
+	position:static;
+	width: 1200px
+	height: 100%;
 }
 .bcg-main {
-	width: auto;
+	width: 
+	height: 100wp;
 	/* height: 100%; */
 	/* background-size: contain; */
 }
@@ -141,6 +146,20 @@ body {
 	margin: 20px auto;
 	max-width: 600px;
 }
+.checkoutSection {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 900px;
+	display: none;
+	background-color: #f9f9f9;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 600px;
+}
 
 .selectedCar h2 {
 	margin-bottom: 20px;
@@ -204,7 +223,8 @@ body {
 }
 
 .selectedCar .goBackButton {
-	margin-bottom: 20px;
+	box-sizing: border-box;
+	/* margin-bottom: 20px; */
 	background-color: #f44336;
 	color: white;
 	border: none;
@@ -215,5 +235,8 @@ body {
 }
 
 .selectedCar .goBackButton:hover {
-	background-color: #d32f2f;
+	box-sizing: border-box;
+	color: black;
+	background-color: white;
+	border: 3px solid #f44336;
 }
