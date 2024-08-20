@@ -30,19 +30,23 @@
 				<form class="orderForm">
 					<div>
 						<label for="name">Full Name:</label>
-						<input type="text" name="name" required />
+						<input type="text" name="name"/>
+						<!-- <input type="text" name="name" required /> -->
 					</div>
 					<div>
 						<label for="email">Email:</label>
-						<input type="email" name="email" required />
+						<!-- <input type="email" name="email" required /> -->
+						<input type="email" name="email" />
 					</div>
 					<div>
 						<label for="deliveryDate">Delivery Date:</label>
-						<input type="date" name="deliveryDate" id="deliveryDate" required />
+						<!-- <input type="date" name="deliveryDate" id="deliveryDate" required /> -->
+						<input type="date" name="deliveryDate" id="deliveryDate"/>
 					</div>
 					<div>
 						<label for="paymentMethod">Payment Method:</label>
-						<select name="paymentMethod" required>
+						<!-- <select name="paymentMethod" required> -->
+						<select name="paymentMethod" >
 							<option value="" disabled selected>Select Payment Method</option>
 							<option value="credit">Credit</option>
 							<option value="leasing">Leasing</option>
@@ -51,12 +55,12 @@
 							<option value="other">Other</option>
 						</select>
 					</div>
-					<div class="controlPanel">
-						<button class="btnAccept">Accept</button>
-						<button class="btnCancel">Cancel</button>
-						<button class="btnAnCar">Choose another car</button>
-					</div>
 				</form>
+					<div class="controlPanel">
+						<button class="btn accept">Accept</button>
+						<button class="btn cancel">Cancel</button>
+						<button class="btn addOptions">Add options</button>
+					</div>
 			</section>
 		</div>
 

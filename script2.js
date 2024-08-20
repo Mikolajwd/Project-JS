@@ -183,22 +183,32 @@ const checkoutSection = document.querySelector('.checkoutSection')
 		checkoutSection.style.display = 'block';
 		selectedCar.style.display = 'none';
 	});
-
-	// обработчик событий для кнопки назад
-	const goBackButton = document.querySelector('.goBackButton');
-	goBackButton.addEventListener('click', function () {
+	
+	
+	function goBack () {
 		console.log('click go back');
-
+		
 		saleSection.style.display = 'block';
 		selectedCar.style.display = 'none';
-	});
+	};
+	
+	// обработчик событий для кнопки назад
+	const goBackButton = document.querySelector('.goBackButton');
+	goBackButton.addEventListener('click', goBack);
+	
+	const btnCancel = document.querySelector('.btn.cancel')
+	btnCancel.addEventListener("click", () => {
+		goBack();
+		console.log('click cancel');
+		checkoutSection.style.display = 'none';
+		
+	})
+
 }
-
-
-
-
-
+	
+	
 // Добавим обработчики событий для карточек автомобилей
+const btnAddOptions = document.querySelector('.btn.addOptions')
 const cardCars = document.querySelectorAll('.cardCar');
 cardCars.forEach((card, index) => {
 	card.addEventListener('click', function () {
@@ -206,6 +216,21 @@ cardCars.forEach((card, index) => {
 		// Отобразим детали выбранного автомобиля
 		showCarDetails(carsData[index]);
 	});
+
+	
+	btnAddOptions.addEventListener("click", () => {
+		console.log('click add option');
+		showCarDetails(carsData[index]);
+	})
 });
+
+
+
+
+
+const btnAccept = document.querySelector('.btn.accept');
+btnAccept.addEventListener("click", () => {
+	console.log('click accept');
+})
 
 
